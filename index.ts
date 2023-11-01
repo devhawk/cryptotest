@@ -17,7 +17,7 @@ async function test(
 }
 
 async function main() {
-  await test(Subtle.makeDeviceKey, Subtle.encrypt, GOSQAS.decrypt);
+  await test(GOSQAS.makeDeviceKey, GOSQAS.encrypt, Subtle.decrypt);
 }
 
 main().catch(console.error);
